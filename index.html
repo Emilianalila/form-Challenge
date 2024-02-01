@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Happy Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div>
+      <h1>My Happy Form</h1>
+      <input type="text" class="js-name" placeholder="First name" />
+      <input type="text" class="js-lastName" placeholder="Last name" /> <br />
+      <br/>
+
+      <textarea name="" id="comment-input" cols="25" rows="3"></textarea> <br/>
+      <label>Subscribe to newsletter</label><input id="myCheck" type="checkbox" /><br />
+      <input type="text" class="js-inputEmail" placeholder="Enter your email" />
+      <br/><br/>
+
+      <button onclick="
+         fetchData();
+      " class="js-submitButton">Submit</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
