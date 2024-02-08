@@ -68,12 +68,15 @@ async function fetchData(){
       displayData.innerHTML = `Name: ${data.firstName}`;
       document.body.append(displayData); */
       let msjSuccessfulSubmission = document.createElement('p')
+      msjSuccessfulSubmission.className = 'css-mjsSuccessful';
+      console.log(msjSuccessfulSubmission.className = 'css-mjsSuccessful')
       if (myCheckbox.checked === true){
         msjSuccessfulSubmission.innerHTML = `Thanks for your subscribe "${data.firstName}".` //when client doesn't subscribe, don't show the Subccessful Submission message
       }else {
         msjSuccessfulSubmission.innerHTML = `Add your Email and checked the box for subscribe.`
       }
       document.body.append(msjSuccessfulSubmission);
+      
       setTimeout(()=>{
          myNameInput.value = '';
          myLastName.value = '';

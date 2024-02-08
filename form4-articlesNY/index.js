@@ -37,7 +37,7 @@ async function fetchArticle(){
         bodyElement.innerHTML = element.lead_paragraph;
         divElement.appendChild(bodyElement);
         
-        //console.log(element.multimedia[0].url);
+        //console.log(element.multimedia[0].url); I get just the url
         if(element.multimedia && element.multimedia.length > 0){ // 3)
           const imgElement = document.createElement('img')
         imgElement.src = `https://static01.nyt.com/${element.multimedia[0].url}` // cuando utilizo src, inmediatamente le tengo que dar un camino o una url en donde pueda encontrar esa imagen, por lo tanto le doy el http q me da el ejercicio seguido del "resources" de donde especificamente se encontraria mi imagen en el array, podemos ir probando el lugar con console,log y agregar el lugar especifico con un placeholder.

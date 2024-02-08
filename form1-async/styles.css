@@ -1,3 +1,9 @@
 body{
   margin: 40px;
 }
+.cs-title{
+  color: blueviolet;
+}
+.css-mjsSuccessful{
+  color: rgb(83, 13, 149);
+}
