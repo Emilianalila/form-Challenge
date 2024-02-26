@@ -1,5 +1,5 @@
-//Sending form information to an test API that simulates a RESTful server, 
-//Then I make an HTTP request using fetch, getting a promise as a result. I use async/await to handle it asynchronously waiting for it to resolve or not.
+//Sending form information to an test API that simulates a RESTful server, using javaScript.
+//Then I make an HTTP request using fetch(Post), getting a promise as a result. I use async/await to handle it asynchronously waiting for it to resolve or not.
 //I use the method addEventListener(), which allows my application to respond to specific user events example:"click a submit button" without having to reload the page.
 
 let myNameInput = document.querySelector('.js-name'); //using "querySelector"
@@ -86,7 +86,7 @@ async function fetchData(){
          myCheckbox.disabled = true;
          mySubmitButton.disabled = true;
         return msjSuccessfulSubmission.style.display = 'none';
-      },2000);
+      },3000);
     }
   }catch(err){
     console.error(err,'Oops something went wrong');

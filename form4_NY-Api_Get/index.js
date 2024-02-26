@@ -5,8 +5,8 @@
     4. When a user makes a new search, it should clear the previous results from the screen */
 
 /* Algorithm
-1_fetch the API NY, make a Get request to 
-2_iterate the result
+1_fetch the API NY time, make a Get request. 
+2_Iterate the result.
 3_display de result with DOM, title, body and img */    
 
 

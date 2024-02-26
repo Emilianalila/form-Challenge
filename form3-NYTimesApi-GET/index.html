@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 class="css-h1">New York Times API_1</h1>
+    <p class="css-p">
+      Small App that searches the New York Times API using an apiKey for articles based on a
+      user's input.
+    </p>
+    <input id="js-inputSearch" class="css-input" type="text" placeholder="Enter your search term"/>
+    <button onclick="
+    fetchArticle()
+    "class="css-button">Search</button>
+    <div class="js-container css-container">Reply:</div><!-- empty container which will store the response that the API will return -->
+    <br>
+  <hr>
+  
+  <div>
+    <h4>Create your app which should work like this:</h4>
+    <ul>
+      <li>User has an input and button</li>
+      <li>When a user types a search term and clicks the button an API request should be made to NYTime using your apikey.</li>
+      <li>Show all relevant posts on the page (HINT: the images require [`https://static01.nyt.com/`]  in front of the url returned from NYT).</li>
+      <li>When a user makes a new search, it should clear the previous results from the screen.</li>
+    </ul>
+  </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

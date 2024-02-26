@@ -3,27 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Happy Form</title>
+    <title>My Happy Form 1</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div>
-      <h1 class="cs-title" >My Happy Form</h1>
+    <h4>We are going to use a fake API to Post some data from a form, using fetch and promises for result and a method:"e.preventDefault()" to prevent the default behavior</h4>
+    <p>1_Sending form information to an test API that simulates a RESTful server.</p>
+    <p>2_Then I make an HTTP request using fetch(Post), getting a promise as a result. I use async/await to handle it asynchronously waiting for it to resolve or not.</p>
+    <p>3_I use the method addEventListener(), which allows my application to respond to specific user events example:"click a submit button" without having to reload the page.</p>
+    <hr>
+    </div>
+    
+    <div>
+      <br>
+      <h1 class="cs-title" >My Happy Form 1</h1>
       <input type="text" class="js-name" placeholder="First name" />
       <input type="text" class="js-lastName" placeholder="Last name" /> <br />
       <br/>
-
+      
       <textarea name="" id="comment-input" cols="25" rows="3"></textarea> <br/>
       <label>Subscribe to newsletter</label><input id="myCheck" type="checkbox" /><br />
       <input type="text" class="js-inputEmail" placeholder="Enter your email" />
       <br/><br/>
-
+      
       <button onclick="
          fetchData();
       " class="js-submitButton">Submit</button>
       <br>
     </div>
-
+    
     <script src="./index.js"></script>
   </body>
 </html>
