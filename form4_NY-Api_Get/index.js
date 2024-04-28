@@ -19,12 +19,12 @@ async function fetchArticle(){
       throw new Error('Source not found')
     }else{
       const result = await data.json();
-      console.log(result.response.docs);             // array with all the article information
+      console.log(result.response.docs);          // array of objects with all the article information
       
       const container = document.querySelector('.js-container') //A) I bring my container and I start to put all the small div, with the information
       container.innerHTML = ''; // I have to remenber that I just bring this container in the line before, but I didn`t use, so after a fetch the articles I clean the container and then I use de container to fill it with the new articles. 
       
-      result.response.docs.forEach(element =>{
+      result.response.docs.forEach(element =>{ // for each element in my array
         const divElement = document.createElement('div')//B) Container for each element
         divElement.className = 'containerElement';      // className to put same css later
         container.appendChild(divElement);

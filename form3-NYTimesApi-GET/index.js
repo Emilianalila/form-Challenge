@@ -10,6 +10,7 @@ async function fetchArticle() {
       throw new Error("could not fetch resource");
     } else {
       const datum = await requestNY.json();                            // If you don't use await with requestNY.json(), you'll get a promise instead of the resulting JavaScript object. Without await, you would be working with the promise itself rather than the resolved value of the promise.
+      console.log(datum);
       console.log(datum.response.docs);                               // 'resolve: an array of 10'(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
       console.log(datum.response.docs[0].multimedia[0].url);
       
